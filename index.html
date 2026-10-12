@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daily Stock Brief</title>
+<style>
+  :root {
+    --bg: #f7f7f5; --card: #ffffff; --text: #1d1d1f; --muted: #6b6b70; --border: #e3e3e0;
+    --accent: #2f5bd3; --warn: #b7791f; --chip: #eef1f8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141416; --card: #1d1d20; --text: #ececee; --muted: #9a9aa2; --border: #2e2e33;
+      --accent: #7c9cff; --warn: #f2b94b; --chip: #26293a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 15px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 860px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 28px; margin: 0 0 4px; }
+  .muted { color: var(--muted); }
+  .disclaimer { margin: 10px 0 24px; padding: 10px 14px; border-left: 3px solid var(--warn);
+                background: var(--card); font-size: 13px; color: var(--muted); }
+  .card { display: block; background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+          padding: 14px 18px; margin-bottom: 10px; color: var(--text); text-decoration: none; }
+  .card:hover { border-color: var(--accent); }
+  .card.latest { border-color: var(--accent); border-width: 2px; }
+  .date { font-weight: 700; font-size: 17px; }
+  .tag { font-size: 12px; font-weight: 600; color: var(--accent); margin-left: 8px; }
+  .tiers { margin-top: 6px; display: grid; gap: 4px; font-size: 14px; }
+  .tier { color: var(--muted); display: inline-block; width: 52px; font-size: 12px;
+          text-transform: uppercase; letter-spacing: .03em; font-weight: 600; }
+  .chip { display: inline-block; padding: 1px 8px; margin: 0 4px 2px 0; border-radius: 999px; font-size: 12px;
+          background: var(--chip); color: var(--accent); font-weight: 600; white-space: nowrap; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Daily Stock Brief</h1>
+  <div class="muted">US stocks · 3 large, 3 mid and 3 small cap ideas each weekday</div>
+  <div class="disclaimer">AI-generated research to help you find ideas. Not financial advice. Check every pick yourself before investing; prices and data may be delayed or incomplete.</div>
+  <a class="card latest" href="2026-10-12/"><span class="date">2026-10-12</span><span class="tag">LATEST</span><div class="tiers"><div><span class="tier">large</span><span class="chip">GEV · 5-10 years</span><span class="chip">VRT · 5-10 years</span><span class="chip">XOM · 1 year</span></div><div><span class="tier">mid</span><span class="chip">INSW · 1 year</span><span class="chip">ERO · 1 year</span><span class="chip">POWL · 5-10 years</span></div><div><span class="tier">small</span><span class="chip">TEN · 1 year</span><span class="chip">REPX · 1 year</span><span class="chip">NPK · 1 year</span></div></div></a>
+</main>
+</body>
+</html>

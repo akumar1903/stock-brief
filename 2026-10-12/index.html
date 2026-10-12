@@ -1,0 +1,796 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stock Brief 2026-10-12</title>
+<style>
+  :root {
+    --bg: #f7f7f5; --card: #ffffff; --text: #1d1d1f; --muted: #6b6b70; --border: #e3e3e0;
+    --accent: #2f5bd3; --up: #1a7f4b; --down: #c0392b; --warn: #b7791f; --chip: #eef1f8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141416; --card: #1d1d20; --text: #ececee; --muted: #9a9aa2; --border: #2e2e33;
+      --accent: #7c9cff; --up: #4cc38a; --down: #ff6b5e; --warn: #f2b94b; --chip: #26293a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 15px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 1080px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 28px; margin: 0 0 4px; }
+  h2 { font-size: 19px; margin: 36px 0 12px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
+  h3 { font-size: 16px; margin: 0 0 8px; }
+  .muted { color: var(--muted); }
+  .small { font-size: 13px; }
+  .disclaimer { margin-top: 10px; padding: 10px 14px; border-left: 3px solid var(--warn);
+                background: var(--card); font-size: 13px; color: var(--muted); }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 16px 18px; }
+  .grid { display: grid; gap: 12px; }
+  .tiles { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+  .tile { padding: 10px 12px; }
+  .tile .v { font-size: 17px; font-weight: 600; font-variant-numeric: tabular-nums; }
+  .up { color: var(--up); } .down { color: var(--down); }
+  .two { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+  ul { margin: 6px 0; padding-left: 20px; } li { margin: 4px 0; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: .03em; }
+  .table-wrap { overflow-x: auto; }
+  .chip { display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: 12px;
+          background: var(--chip); color: var(--accent); font-weight: 600; white-space: nowrap; }
+  .chip.tailwind { color: var(--up); } .chip.headwind { color: var(--down); }
+  .picks { grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)); }
+  .pick-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+  .ticker { font-size: 20px; font-weight: 700; }
+  .score { font-size: 22px; font-weight: 700; color: var(--accent); font-variant-numeric: tabular-nums; }
+  .bar { height: 6px; background: var(--border); border-radius: 3px; overflow: hidden; margin: 3px 0 8px; }
+  .bar > span { display: block; height: 100%; background: var(--accent); }
+  .label { font-size: 12px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .03em; margin-top: 10px; }
+  .risk { color: var(--down); }
+  a { color: var(--accent); text-decoration: none; } a:hover { text-decoration: underline; }
+  .sources a { word-break: break-word; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Daily Stock Brief</h1>
+  <div class="muted">2026-10-12 · US market · Short term = 1 year, long term = 5-10 years</div>
+  <div class="disclaimer">AI-generated research to help you find ideas. Not financial advice. Check every pick yourself before investing; prices and data may be delayed or incomplete.</div>
+
+  
+  <h2>Market snapshot</h2>
+  <div class="grid tiles">
+    
+    <div class="card tile">
+      <div class="small muted">S&amp;P 500</div>
+      <div class="v">7,811.54</div>
+      <div class="small">
+        
+          
+          <span class="up">1d +0.6%</span>
+        
+          
+          <span class="up">1w +1.1%</span>
+        
+          
+          <span class="up">1m +2.9%</span>
+        
+      </div>
+    </div>
+    
+    <div class="card tile">
+      <div class="small muted">Nasdaq Composite</div>
+      <div class="v">27,366.17</div>
+      <div class="small">
+        
+          
+          <span class="up">1d +0.6%</span>
+        
+          
+          <span class="up">1w +0.6%</span>
+        
+          
+          <span class="up">1m +4.9%</span>
+        
+      </div>
+    </div>
+    
+    <div class="card tile">
+      <div class="small muted">Dow Jones</div>
+      <div class="v">51,654.95</div>
+      <div class="small">
+        
+          
+          <span class="up">1d +0.8%</span>
+        
+          
+          <span class="up">1w +0.9%</span>
+        
+          
+          <span class="down">1m -0.8%</span>
+        
+      </div>
+    </div>
+    
+    <div class="card tile">
+      <div class="small muted">Russell 2000</div>
+      <div class="v">2,806.98</div>
+      <div class="small">
+        
+          
+          <span class="up">1d +0.5%</span>
+        
+          
+          <span class="down">1w -0.9%</span>
+        
+          
+          <span class="down">1m -2.9%</span>
+        
+      </div>
+    </div>
+    
+    <div class="card tile">
+      <div class="small muted">VIX</div>
+      <div class="v">15.49</div>
+      <div class="small">
+        
+          
+          <span class="up">1d +4.4%</span>
+        
+          
+          <span class="down">1w -0.2%</span>
+        
+          
+          <span class="down">1m -2.2%</span>
+        
+      </div>
+    </div>
+    
+    <div class="card tile">
+      <div class="small muted">US 10Y yield</div>
+      <div class="v">5.24</div>
+      <div class="small">
+        
+          
+          <span class="up">1d +0.2%</span>
+        
+          
+          <span class="down">1w -0.6%</span>
+        
+          
+          <span class="up">1m +6.1%</span>
+        
+      </div>
+    </div>
+    
+    <div class="card tile">
+      <div class="small muted">US Dollar Index</div>
+      <div class="v">102.38</div>
+      <div class="small">
+        
+          
+          <span class="up">1d +0.2%</span>
+        
+          
+          <span class="up">1w +0.2%</span>
+        
+          
+          <span class="up">1m +3.3%</span>
+        
+      </div>
+    </div>
+    
+    <div class="card tile">
+      <div class="small muted">WTI crude</div>
+      <div class="v">92.83</div>
+      <div class="small">
+        
+          
+          <span class="up">1d +1.1%</span>
+        
+          
+          <span class="up">1w +3.8%</span>
+        
+          
+          <span class="down">1m -7.2%</span>
+        
+      </div>
+    </div>
+    
+    <div class="card tile">
+      <div class="small muted">Gold</div>
+      <div class="v">4,199.20</div>
+      <div class="small">
+        
+          
+          <span class="down">1d -0.4%</span>
+        
+          
+          <span class="up">1w +1.0%</span>
+        
+          
+          <span class="down">1m -4.8%</span>
+        
+      </div>
+    </div>
+    
+    <div class="card tile">
+      <div class="small muted">Copper</div>
+      <div class="v">6.76</div>
+      <div class="small">
+        
+          
+          <span class="up">1d +1.8%</span>
+        
+          
+          <span class="up">1w +2.7%</span>
+        
+          
+          <span class="up">1m +4.5%</span>
+        
+      </div>
+    </div>
+    
+    <div class="card tile">
+      <div class="small muted">Euro Stoxx 50</div>
+      <div class="v">6,195.12</div>
+      <div class="small">
+        
+          
+          <span class="up">1d +0.3%</span>
+        
+          
+          <span class="down">1w -0.8%</span>
+        
+          
+          <span class="down">1m -2.1%</span>
+        
+      </div>
+    </div>
+    
+    <div class="card tile">
+      <div class="small muted">Nikkei 225</div>
+      <div class="v">69,030.92</div>
+      <div class="small">
+        
+          
+          <span class="down">1d -0.0%</span>
+        
+          
+          <span class="up">1w +1.1%</span>
+        
+          
+          <span class="up">1m +4.0%</span>
+        
+      </div>
+    </div>
+    
+    <div class="card tile">
+      <div class="small muted">Hang Seng</div>
+      <div class="v">24,271.20</div>
+      <div class="small">
+        
+          
+          <span class="up">1d +0.2%</span>
+        
+          
+          <span class="up">1w +1.0%</span>
+        
+          
+          <span class="down">1m -2.7%</span>
+        
+      </div>
+    </div>
+    
+    <div class="card tile">
+      <div class="small muted">Shanghai Composite</div>
+      <div class="v">3,797.24</div>
+      <div class="small">
+        
+          
+          <span class="down">1d -0.4%</span>
+        
+          
+          <span class="down">1w -0.7%</span>
+        
+          
+          <span class="down">1m -3.7%</span>
+        
+      </div>
+    </div>
+    
+    <div class="card tile">
+      <div class="small muted">EUR/USD</div>
+      <div class="v">1.12</div>
+      <div class="small">
+        
+          
+          <span class="down">1d -0.2%</span>
+        
+          
+          <span class="down">1w -0.6%</span>
+        
+          
+          <span class="down">1m -3.6%</span>
+        
+      </div>
+    </div>
+    
+    <div class="card tile">
+      <div class="small muted">USD/JPY</div>
+      <div class="v">158.63</div>
+      <div class="small">
+        
+          
+          <span class="up">1d +0.4%</span>
+        
+          
+          <span class="up">1w +0.6%</span>
+        
+          
+          <span class="up">1m +2.7%</span>
+        
+      </div>
+    </div>
+    
+    <div class="card tile">
+      <div class="small muted">Bitcoin</div>
+      <div class="v">83,421.09</div>
+      <div class="small">
+        
+          
+          <span class="down">1d -0.3%</span>
+        
+          
+          <span class="up">1w +0.2%</span>
+        
+          
+          <span class="down">1m -3.7%</span>
+        
+      </div>
+    </div>
+    
+  </div>
+  
+
+  
+  <h2>Today's picture</h2>
+  <div class="card">US large caps are close to record highs. The S&amp;P 500 is at 7,811.54 (+1.15% on the week, +2.9% over 1 month) and the Nasdaq is at 27,366.17. Underneath, the market is narrow and tightly constrained. Small caps are lagging (Russell 2000 -2.9% over 1 month), and only about a third of stocks trade above their 50-day averages. The 10-year Treasury yield is at 5.24% after touching a 24-year high near 5.37% on Oct. 7. The Fed under Chair Warsh raised rates in September to 3.75-4.00%, and futures price a further hike by December. This is happening even as the labor market stalls (September payrolls +29k, unemployment 4.2%), so the backdrop is stagflation-tinged. The main inflation driver is oil: Brent is around $103-105 and WTI at $92.83 because the Strait of Hormuz is still closed. US-Iran talks are stalled, though Washington has ruled out strikes before the Nov. 3 midterms. The US-China trade truce was extended to Jan. 10, 2027, and copper ($6.76/lb) remains near its record. This week brings September CPI on Oct. 14 (headline expected around 3.6-3.7%), PPI and retail sales, and the start of Q3 earnings from JPMorgan, Goldman, TSMC, ASML and UnitedHealth.</div>
+  
+
+  
+  <h2>Global markets</h2>
+  <div class="card"><ul><li>US equities: On Oct. 9 the S&amp;P 500 rose 0.59% to 7,811.54, the Dow 0.83% to 51,654.95 and the Nasdaq 0.64% to 27,366.17. It was the Nasdaq&#39;s fourth straight weekly gain, led by a rebound in megacap tech after a sell-off on Oct. 8. The Russell 2000 (2,806.98) fell 0.91% on the week and is down 2.9% over 1 month. Leadership is narrow and rate-sensitive small caps are lagging.</li><li>Rates: The US 10-year yield is at 5.24%, up 6% over 1 month. It hit about 5.37% on Oct. 7, the highest since 2002. Term premium has been rising because of deficit and political uncertainty. US bond markets are closed Monday Oct. 12 (Columbus Day); stocks trade.</li><li>Fed: The FOMC hiked 25bp to 3.75-4.00% on Sept. 16, unanimously, in Warsh&#39;s first hike as chair. Markets assign roughly 15-17% odds to a hike on Oct. 28 and roughly 70-85% to a hike by Dec. 9. NY Fed President Williams has said there is no urgency to move again right away.</li><li>Labor and sentiment: September nonfarm payrolls rose only 29k against about 85-95k expected, with 60k of downward revisions. Unemployment rose to 4.2% and wages grew 3.0% y/y. The University of Michigan sentiment index fell to 46.3 from 48.1.</li><li>Oil: WTI is at $92.83 (+3.8% on the week, -7.2% over 1 month) and Brent is about $103-105. Iran links reopening the Strait of Hormuz to the US lifting its naval blockade. A reported Trump-Putin deal on Russian diesel supply eased prices slightly on Oct. 9. OPEC+ kept October quotas flat, citing the conflict.</li><li>Dollar and FX: The DXY is at 102.38 (+3.3% over 1 month), helped by Fed hikes and high US yields. EUR/USD is at 1.12 (-3.6% over 1 month). USD/JPY is at 158.63, inside the 158-161 zone where Tokyo has intervened before, so intervention risk is rising.</li><li>Metals: Gold is at $4,199 (-4.8% over 1 month). Higher real yields and a firmer dollar have taken the bid out of it, and it found support at $4,100-4,150. Copper is at $6.76/lb (+4.5% over 1 month), near the record $6.95 set Sept. 22.</li><li>Credit and volatility: In September, US high-yield spreads widened from 261bp to 311bp, and CCC spreads exceeded 1,000bp. It was the worst month of 2026 for US IG and HY total returns. The VIX is subdued at 15.49, which looks complacent next to the rates and oil risk.</li><li>International: The Euro Stoxx 50 (6,195.12) is down 2.1% over 1 month. The Nikkei (69,030.92) is up 4.0% over 1 month on a weak yen. The Hang Seng (24,271.2) and Shanghai Composite (3,797.24) are down 2.7% and 3.7% over 1 month. Brazil (EWZ) jumped more than 15% after the first round of its presidential election. Bitcoin is weak at about $83.4k.</li><li>Week ahead: Tue Oct. 13 brings bank earnings (JPM, GS, WFC, C), NFIB and a Waller speech on AI. Wed Oct. 14 brings September CPI, the Beige Book and Bowman on regulation. Thu Oct. 15 brings PPI, retail sales, Empire/Philly Fed and TSMC earnings. Fri Oct. 16 brings industrial production. Also due this week: ASML, UNH, BAC, JNJ, AA and DPZ.</li></ul></div>
+  
+
+  
+  <h2>Geopolitics and policy</h2>
+  <div class="grid two">
+    
+    <div class="card">
+      <h3>International</h3>
+      <ul>
+      
+        <li><strong>US-Iran standoff: the Strait of Hormuz stays closed, Iran calls the US response &#39;insufficient&#39;, and Washington rules out strikes before the Nov. 3 midterms (Oct. 11-12, 2026)</strong> — Keeps Brent above $100. This helps integrated oils, E&amp;Ps, tankers, refiners with advantaged crude, and oil services. It hurts airlines (Delta trimmed guidance on fuel), chemicals, trucking and consumer discretionary through higher gasoline prices, and it keeps headline CPI high, which feeds the Fed hike path. A reopening deal is the biggest single downside risk for energy stocks and the biggest upside risk for rate-sensitive sectors.
+          <a class="small" href="https://gulfnews.com/world/mena/us-iran-standoff-all-uae-residents-need-to-know-today-oct-12-2026-1.500707059">source</a></li>
+      
+        <li><strong>US-China trade truce extended to Jan. 10, 2027 after Xi&#39;s September state visit. Rare earths are unresolved, and China is reportedly meeting only about two-thirds of its commitments.</strong> — Buys time for semiconductors (NVDA, AMD, semicap such as AMAT, LRCX, KLAC) and for China-exposed industrials, ag exporters (soybeans) and Boeing. The suspended BIS Affiliates Rule and the rare-earth pause are bargaining chips, so January is a new cliff. A lapse would help domestic rare-earth and magnet producers (e.g. MP Materials) and hurt chip companies with China revenue.
+          <a class="small" href="https://www.cnbc.com/2026/09/24/us-china-trade-truce-bessent-trump-xi.html">source</a></li>
+      
+        <li><strong>OPEC+ holds October output flat, citing uncertainty from conflicts in West Asia</strong> — No extra barrels to offset the Hormuz disruption, so oil stays tight. Supportive for energy producers. Negative for fuel-intensive industries and for emerging-market oil importers (India, Japan, Korea).
+          <a class="small" href="https://gulfnews.com/amp/story/business%2Fenergy%2Fopec-keeps-october-oil-output-quota-unchanged-from-september-levels-1.500665366">source</a></li>
+      
+        <li><strong>Europe&#39;s rearmament continues: NATO allies are at about 4% of GDP on defence and security, with more than $40B in joint counter-drone purchases and EUR 70B of Ukraine aid pledged for 2026</strong> — Multi-year demand for US defense primes and munitions makers (LMT, RTX, GD, NOC), counter-drone and electronic warfare, and aerospace supply chains. European procurement preferences are a partial offset for US exporters.
+          <a class="small" href="https://novayagazeta.eu/en/articles/2026/07/07/nato-announces-new-arms-deals-as-europe-seeks-to-show-trump-and-putin-its-investing-in-defence-en-news">source</a></li>
+      
+        <li><strong>US enforces AI-chip export licensing on all China-headquartered firms, including their units outside China (June 2026 guidance, older than 7 days)</strong> — Limits incremental China AI revenue for GPU and accelerator makers. Favors domestic and allied AI capex spending, which benefits US data center supply chains. Congressional pressure for tighter licensing is an ongoing headline risk for semiconductors.
+          <a class="small" href="https://www.aljazeera.com/economy/2026/6/1/us-says-ban-on-ai-chip-shipments-applies-to-chinese-firms-outside-china">source</a></li>
+      
+      </ul>
+    </div>
+    
+    <div class="card">
+      <h3>United States</h3>
+      <ul>
+      
+        <li><strong>Fed under Warsh hiked to 3.75-4.00% in September. Markets price about 70-85% odds of another hike by December, and the 10-year hit a 24-year high near 5.37% (Oct. 7-9, 2026).</strong> — Higher-for-longer rates hurt homebuilders, REITs, utilities as bond proxies, unprofitable growth and small caps (Russell -2.9% over 1 month), and leveraged borrowers. They help money-center bank net interest income at the margin, insurers&#39; reinvestment yields, and the dollar.
+          <a class="small" href="https://www.mufgresearch.com/articles/september-2026-fomc-recap">source</a></li>
+      
+        <li><strong>September payrolls +29k, unemployment 4.2%, wage growth slowing to 3.0% y/y (Oct. 2, 2026)</strong> — Softening labor plus about 3.6% headline inflation is a stagflation mix. Negative for consumer discretionary (especially lower-income retail and restaurants), staffing firms and cyclicals. Supportive for defensives and health care (the only real job creator). It raises the risk of a Fed policy mistake.
+          <a class="small" href="https://www.foxbusiness.com/economy/us-jobs-report-september-2026">source</a></li>
+      
+        <li><strong>SpaceX buys a nationwide low-band spectrum portfolio to make Starlink Mobile a US carrier. TMUS, T and VZ fall 8.5-13%; tower REITs rise 7-16% (Oct. 8-9, 2026).</strong> — Structural competitive threat to incumbent wireless carriers&#39; pricing power. Positive for tower operators (AMT, CCI, SBAC) and potentially spectrum and satellite equipment suppliers.
+          <a class="small" href="https://finance.yahoo.com/markets/stocks/articles/markets-news-oct-9-2026-105547352.html">source</a></li>
+      
+        <li><strong>Pharma tariffs and most-favored-nation drug pricing: 26 drugmakers have signed MFN deals, Section 232 tariffs of up to 100% apply to patented imports without US manufacturing commitments, and a Medicare pricing demonstration was slated for Oct. 1 (older than 7 days)</strong> — Large-cap pharma is mostly de-risked through deals but faces margin pressure. A tailwind for US pharma manufacturing and CDMO capex and for contract builders. A headwind for importers without US plants and for mid-cap biopharma pricing.
+          <a class="small" href="https://biotechbriefings.gibsondunn.com/?p=7097">source</a></li>
+      
+        <li><strong>Nov. 3 midterms: political uncertainty and about $1T deficits are lifting the Treasury term premium. The debt ceiling is expected to bind in 2027.</strong> — Divided government could cap new fiscal packages, a modest relief for Treasuries. Gridlock raises debt-ceiling brinkmanship risk in 2027. Sector policy risk around the election: health care, energy, defense budgets. Historically, midterm-year returns are below average and post-election rallies are common.
+          <a class="small" href="https://www.troweprice.com/en/us/insights/us-midterm-elections-what-investors-need-to-know">source</a></li>
+      
+        <li><strong>Bank capital relief: re-proposed Basel and capital rules lower requirements for most large banks. Bank earnings start Oct. 13.</strong> — Frees excess capital for buybacks and lending at large banks and brokers (GS, MS, BAC, C, WFC). JPMorgan is an exception, seeing about a 4% higher requirement. A steeper curve and trading volatility support Q3 results.
+          <a class="small" href="https://www.marketscreener.com/news/banks-press-for-more-capital-relief-make-plans-to-use-excess-capital-ce7e50dfdd8cf521">source</a></li>
+      
+      </ul>
+    </div>
+    
+  </div>
+  
+
+  
+  <h2>Sector winners and losers</h2>
+  <div class="card table-wrap">
+    <table>
+      <tr><th>Sector</th><th>Direction</th><th>Horizon</th><th>Why</th></tr>
+      
+      <tr><td>Integrated oil and E&amp;P producers</td><td><span class="chip tailwind">tailwind</span></td>
+          <td class="small">1 year</td><td>Brent at $103-105 and WTI at $92.83 with Hormuz closed and OPEC+ holding output flat. Strong free cash flow and buybacks. The main risk is a sharp drop if a reopening deal lands.</td></tr>
+      
+      <tr><td>Airlines</td><td><span class="chip headwind">headwind</span></td>
+          <td class="small">1 year</td><td>Jet fuel costs tied to $100+ Brent. Delta trimmed its full-year profit outlook on fuel (Oct. 8-9). Consumer sentiment at 46.3 threatens leisure demand.</td></tr>
+      
+      <tr><td>Defense contractors and munitions</td><td><span class="chip tailwind">tailwind</span></td>
+          <td class="small">5-10 years</td><td>NATO path to 3.5% + 1.5% of GDP, more than $40B in counter-drone buys, EUR 70B/yr of Ukraine aid, and the Middle East conflict replenishment cycle.</td></tr>
+      
+      <tr><td>Semiconductors (AI accelerators and semicap)</td><td><span class="chip neutral">neutral</span></td>
+          <td class="small">1 year</td><td>AI demand is strong, but SOXX failed at $600 and fell about 5%. Chip stocks had a bear-market-like drop in July. 5%+ yields compress multiples, and the China truce expires Jan. 10, 2027. TSMC and ASML earnings this week are key.</td></tr>
+      
+      <tr><td>AI infrastructure: power equipment, grid and electrical components</td><td><span class="chip tailwind">tailwind</span></td>
+          <td class="small">5-10 years</td><td>Utility capex of about $1.3-1.4T through 2030 and hyperscaler capex of roughly $600-700B in 2026. Power, transformers and switchgear are now the binding constraint on data center buildouts.</td></tr>
+      
+      <tr><td>Nuclear and uranium</td><td><span class="chip tailwind">tailwind</span></td>
+          <td class="small">5-10 years</td><td>Big Tech has contracted more than 10 GW of US nuclear power. DOE has $17.5B in conditional loans for AP1000 supply chains, and long-term utility contracting is underway (e.g. Cameco-India).</td></tr>
+      
+      <tr><td>Copper miners</td><td><span class="chip tailwind">tailwind</span></td>
+          <td class="small">1 year</td><td>Copper at $6.76/lb (+4.5% over 1 month), near the $6.95 record, on electrification, data center and grid demand plus tight supply. China demand is the swing risk.</td></tr>
+      
+      <tr><td>Homebuilders and residential real estate</td><td><span class="chip headwind">headwind</span></td>
+          <td class="small">1 year</td><td>10-year yield at 5.24% (24-year highs) pushes mortgage rates higher. The Fed is still hiking and the labor market is softening.</td></tr>
+      
+      <tr><td>Rate-sensitive REITs (office, net lease) and utilities as bond proxies</td><td><span class="chip headwind">headwind</span></td>
+          <td class="small">1 year</td><td>Rising term premium and Fed hikes compete with dividend yields. Data-center-linked utilities are the exception over the long term.</td></tr>
+      
+      <tr><td>Large money-center banks and investment banks</td><td><span class="chip tailwind">tailwind</span></td>
+          <td class="small">1 year</td><td>Capital relief frees buyback capacity. Higher rates support net interest income, and volatility helps trading. Q3 earnings start Oct. 13.</td></tr>
+      
+      <tr><td>Regional banks</td><td><span class="chip headwind">headwind</span></td>
+          <td class="small">1 year</td><td>5%+ long yields deepen unrealized securities and CRE losses. Credit spreads are widening and small-business conditions are weakening. Lower beneficiaries of the capital relief than the big banks.</td></tr>
+      
+      <tr><td>Wireless telecom carriers</td><td><span class="chip headwind">headwind</span></td>
+          <td class="small">1 year</td><td>SpaceX spectrum purchase and the Starlink Mobile carrier ambitions hit TMUS, T and VZ by 8.5-13% (Oct. 8-9). A structural pricing threat.</td></tr>
+      
+      <tr><td>Tower REITs</td><td><span class="chip tailwind">tailwind</span></td>
+          <td class="small">1 year</td><td>AMT, CCI and SBAC rallied 7-16% on a new well-funded carrier entrant adding tenancy demand. Offset partly by high rates.</td></tr>
+      
+      <tr><td>Consumer discretionary (lower-income retail, restaurants)</td><td><span class="chip headwind">headwind</span></td>
+          <td class="small">1 year</td><td>Payrolls +29k, real wage squeeze (3.0% wages vs about 3.6% CPI), $90+ crude at the pump, and sentiment at 46.3.</td></tr>
+      
+      <tr><td>Small-cap unprofitable growth and leveraged borrowers</td><td><span class="chip headwind">headwind</span></td>
+          <td class="small">1 year</td><td>Russell 2000 down 2.9% over 1 month. HY spreads widened by 50bp to 311bp and CCC spreads exceed 1,000bp. Refinancing costs are rising with the Fed hiking.</td></tr>
+      
+      <tr><td>Private credit and BDCs</td><td><span class="chip headwind">headwind</span></td>
+          <td class="small">1 year</td><td>Rising private credit defaults, BDC redemption requests above quarterly limits, a shrinking illiquidity premium, and the September credit sell-off.</td></tr>
+      
+      <tr><td>Cybersecurity software</td><td><span class="chip tailwind">tailwind</span></td>
+          <td class="small">5-10 years</td><td>State-actor threat from active conflicts (Iran, Russia) and AI-driven attack surfaces. Spending is non-discretionary.</td></tr>
+      
+      <tr><td>Gold miners</td><td><span class="chip neutral">neutral</span></td>
+          <td class="small">1 year</td><td>Gold is high at $4,199, so margins are fat, but it is down 4.8% over 1 month as real yields and the dollar rise. It is a hedge if the Fed blinks or geopolitics escalates.</td></tr>
+      
+    </table>
+  </div>
+  
+
+  
+  <h2>Long-term themes (5–10 years)</h2>
+  <div class="grid two">
+    
+    <div class="card"><h3>AI compute and the power bottleneck</h3><div>Hyperscaler capex is about $600-700B in 2026 and heading toward $1T. US utilities plan about $1.3-1.4T of capex through 2030. Data centers are projected to reach about 9% of US electricity by 2030, and grid interconnection takes 5-7 years.</div>
+      <div class="small muted" style="margin-top:6px">Beneficiaries: Electrical equipment (transformers, switchgear), grid-scale utilities with data center load, gas turbines, cooling and thermal management, data center REITs, networking optics</div></div>
+    
+    <div class="card"><h3>Nuclear renaissance</h3><div>Federal loan support ($17.5B conditional for 10 AP1000s), Big Tech power purchase agreements (more than 10 GW), and global SMR programs.</div>
+      <div class="small muted" style="margin-top:6px">Beneficiaries: Uranium miners and enrichers, reactor and component suppliers (AP1000 supply chain), nuclear-heavy independent power producers</div></div>
+    
+    <div class="card"><h3>Western rearmament and drones</h3><div>NATO 5% of GDP framework by 2035, two active wars, and stockpile replenishment.</div>
+      <div class="small muted" style="margin-top:6px">Beneficiaries: Defense primes, munitions, counter-drone and electronic warfare, space and satellite, aerospace forgings and castings</div></div>
+    
+    <div class="card"><h3>Electrification and critical minerals security</h3><div>Copper is near records on structural deficits. China&#39;s rare-earth leverage is unresolved through the Jan. 10, 2027 truce, and Washington is funding non-China supply.</div>
+      <div class="small muted" style="margin-top:6px">Beneficiaries: Copper miners, rare-earth and magnet producers, domestic lithium and graphite processors</div></div>
+    
+    <div class="card"><h3>Reshoring of pharma and advanced manufacturing</h3><div>Section 232 pharma tariffs and MFN deals tie tariff relief to US plant commitments. Chip tariffs and export controls push supply chains onshore.</div>
+      <div class="small muted" style="margin-top:6px">Beneficiaries: CDMOs, engineering and construction firms, industrial automation, US-based pharma API makers</div></div>
+    
+    <div class="card"><h3>Aging population and health care demand</h3><div>Health care is the only consistent source of job growth (+17k in September), and Medicare Advantage ratings and policy remain key drivers (Humana +12% on 2027 stars).</div>
+      <div class="small muted" style="margin-top:6px">Beneficiaries: Managed care with Medicare Advantage scale, medical devices, obesity/GLP-1 franchises, home health</div></div>
+    
+    <div class="card"><h3>Cybersecurity</h3><div>Geopolitical cyber conflict and AI-enabled threats make spending non-discretionary through cycles.</div>
+      <div class="small muted" style="margin-top:6px">Beneficiaries: Platform security, identity, cloud and endpoint security vendors</div></div>
+    
+  </div>
+  
+
+  
+  
+  <h2>Large caps (over $10B)</h2>
+  
+  <div class="grid picks">
+    
+    <div class="card">
+      <div class="pick-head">
+        <div><span class="ticker">GEV</span> <span class="chip">5-10 years</span></div>
+        <div class="score">7.7<span class="small muted">/10</span></div>
+      </div>
+      <div class="small muted">GE Vernova Inc. · Industrials · $1004.73 · $267.6B</div>
+      <div class="small" style="margin-top:8px">1 year 6.5</div>
+      <div class="bar"><span style="width: 65.5%"></span></div>
+      <div class="small">5–10 years 7.7</div>
+      <div class="bar"><span style="width: 77.0%"></span></div>
+      <div>GE Vernova owns the scarcest asset in the AI power build-out: gas turbine slots. Gas backlog plus slot reservations hit 116 GW in Q2 and total backlog is $176B, with $200B targeted in 2027. It carries net cash and $15.7B FCF, but 39.8x forward earnings and 66x EV/EBITDA (vs Eaton 26.4x forward) already price in much of that. Best fit is the 5-10 year horizon.</div>
+      <div class="label">External driver</div><div>Hyperscaler capex of $600-700B in 2026 and $1.3-1.4T of utility capex through 2030, with power as the binding constraint on data centers (macro long-term theme). 5%+ yields are a headwind for high-multiple names over the next 12 months.</div>
+      <div class="label">Internal driver</div><div>Q2 orders $24.2B (+88% organic), revenue growth +21.9%, 20 GW/yr turbine output in Q3 2026 rising to 24 GW in 2028; next earnings 2026-10-28; mean target $1,225 vs the $1,004.73 price. Operating margin is still thin at 7.5% because of Wind.</div>
+      <div class="label">Key risk</div><div class="risk">Peak-order risk if data-center capex pauses or gas-turbine orders roll over in 2027. Rich valuation leaves little room for execution slips, and Wind losses persist.</div>
+      
+      <div class="label">Key numbers</div>
+      <div class="small">Fwd P/E: <strong>39.8</strong> · Rev growth: <strong>+21.9%</strong> · Op margin: <strong>7.5%</strong> · Debt/Equity: <strong>0.28</strong> · 12m return: <strong>+61.0%</strong> · vs 52w high: <strong>-14.5%</strong> · Next earnings: <strong>2026-10-28</strong></div>
+      
+      
+      <div class="label">Sources</div>
+      <ul class="small sources"><li><a href="https://www.sec.gov/Archives/edgar/data/0001996810/000199681026000147/gevpressrelease2q26.htm">GE Vernova 2Q 2026 press release (SEC 8-K)</a> <span class="muted">(2026-07-22)</span></li><li><a href="https://www.zacks.com/stock/news/2959238/ge-vernova-q2-earnings-call-highlights-bigger-capacity-push">GE Vernova Q2 earnings call highlights bigger capacity push (Zacks)</a> <span class="muted">(2026-07-23)</span></li><li><a href="https://arkolith.com/news/news-ge-vernova-gas-turbine-backlog">GE Vernova&#39;s 116 GW backlog tests AI power demand (Arkolith)</a> <span class="muted">(2026-08-18)</span></li></ul>
+      
+    </div>
+    
+    <div class="card">
+      <div class="pick-head">
+        <div><span class="ticker">VRT</span> <span class="chip">5-10 years</span></div>
+        <div class="score">7.3<span class="small muted">/10</span></div>
+      </div>
+      <div class="small muted">Vertiv Holdings Co · Industrials · $242.78 · $93.5B</div>
+      <div class="small" style="margin-top:8px">1 year 5.9</div>
+      <div class="bar"><span style="width: 59.0%"></span></div>
+      <div class="small">5–10 years 7.3</div>
+      <div class="bar"><span style="width: 73.0%"></span></div>
+      <div>Vertiv is the purest listed play on data-center power and liquid cooling. Revenue is growing 24%, operating margin is 20%, ROE is 44% and PEG is 0.82, and the stock is 35% off its high after the July Q2 revenue miss. It now trades at 26.4x forward earnings, the same as Eaton but with faster growth. Strong 5-10 year story; for the next year it needs the Oct 21 print to prove the miss was timing.</div>
+      <div class="label">External driver</div><div>AI compute and power bottleneck: hyperscaler capex of $600-700B in 2026 heading toward $1T. Thermal management becomes non-optional as rack densities rise. The US-China truce to Jan 10, 2027 eases component and tariff risk for now.</div>
+      <div class="label">Internal driver</div><div>Q2 revenue $3.27B (+24.1%) missed the $3.38B consensus on supply-chain congestion, and the stock fell 17% on July 29; FY26 guidance was raised to $13.8-14.2B revenue and EPS $6.65-6.75. Several plaintiff firms (Pomerantz, Hagens Berman, SBS) have announced investigations, but no suit or finding. Consensus &#39;strong_buy&#39;, mean target $337 vs the $242.78 price.</div>
+      <div class="label">Key risk</div><div class="risk">Another quarter of project slippage, or AI capex digestion in 2027, would confirm the miss as demand rather than timing. Securities-litigation headlines add overhang.</div>
+      
+      <div class="label">Key numbers</div>
+      <div class="small">Fwd P/E: <strong>26.4</strong> · Rev growth: <strong>+24.1%</strong> · Op margin: <strong>20.4%</strong> · Debt/Equity: <strong>0.70</strong> · 12m return: <strong>+45.2%</strong> · vs 52w high: <strong>-35.4%</strong> · Next earnings: <strong>2026-10-21</strong></div>
+      
+      
+      <div class="label">Sources</div>
+      <ul class="small sources"><li><a href="https://www.placera.se/pressmeddelanden/vertiv-holdings-investor-alert-pomerantz-law-firm-investigates-claims-on-behalf-of-investors-of-vertiv-holdings-co-vrt-20260828">Pomerantz Law Firm Investigates Claims on Behalf of Investors of Vertiv (Placera)</a> <span class="muted">(2026-08-28)</span></li><li><a href="https://www.marketbeat.com/instant-alerts/price-vertiv-nyse-vrt-stock-price-up-3-whats-next-2026-09-18/">Vertiv stock price up 3%, what&#39;s next (MarketBeat)</a> <span class="muted">(2026-09-18)</span></li><li><a href="https://secure.businesswire.com/news/home/20260808162585/en/VRT-Investors-Have-Opportunity-to-Join-Vertiv-Holdings-Co-Fraud-Investigation-with-SBS-Law">VRT Investors Fraud Investigation with SBS Law (BusinessWire)</a> <span class="muted">(2026-08-08)</span></li></ul>
+      
+    </div>
+    
+    <div class="card">
+      <div class="pick-head">
+        <div><span class="ticker">XOM</span> <span class="chip">1 year</span></div>
+        <div class="score">7.2<span class="small muted">/10</span></div>
+      </div>
+      <div class="small muted">ExxonMobil Holdings Corporation · Energy · $168.94 · $694.7B</div>
+      <div class="small" style="margin-top:8px">1 year 7.2</div>
+      <div class="bar"><span style="width: 72.0%"></span></div>
+      <div class="small">5–10 years 6.4</div>
+      <div class="bar"><span style="width: 64.0%"></span></div>
+      <div>ExxonMobil is the cleanest large-cap way to own the $100+ Brent regime: Q2 2026 revenue jumped to $114.5B and net income to $14.5B, the balance sheet is nearly unlevered (D/E 0.16), and the stock trades at 14.7x forward earnings, in line with Chevron (14.4x). Best fit is the 1-year horizon while Hormuz stays closed.</div>
+      <div class="label">External driver</div><div>Strait of Hormuz closure plus OPEC+ holding October quotas flat keeps Brent at $103-105 and WTI near $93 (macro.json); XOM&#39;s low beta (0.21) also cushions it against equity multiple compression from 5%+ yields.</div>
+      <div class="label">Internal driver</div><div>Q2 2026 EPS $3.48 (vs $1.00 in Q1) on record Permian output; fifth Guyana FPSO slated for Q4 2026 startup; trailing revenue growth +44.1%, FCF $20.7B; next earnings 2026-10-30 per market data (some previews cite Oct 23). Stock at $168.94 is close to the $173.6 mean target, which limits upside on Street targets.</div>
+      <div class="label">Key risk</div><div class="risk">A US-Iran deal that reopens Hormuz could quickly push Brent back toward the EIA&#39;s 2026 average of about $87 and the mid-$60s it projects for 2027. That would unwind the earnings spike; longer term, energy-transition demand erosion is the risk.</div>
+      
+      <div class="label">Key numbers</div>
+      <div class="small">Fwd P/E: <strong>14.7</strong> · Rev growth: <strong>+44.1%</strong> · Op margin: <strong>15.9%</strong> · Debt/Equity: <strong>0.16</strong> · 12m return: <strong>+52.5%</strong> · vs 52w high: <strong>-0.2%</strong> · Next earnings: <strong>2026-10-30</strong></div>
+      
+      
+      <div class="label">Sources</div>
+      <ul class="small sources"><li><a href="https://rmsystem.cz/udalosti/21342-exxonmobil-announces-second-quarter-2026-results">ExxonMobil Announces Second-Quarter 2026 Results (RM-SYSTEM repost)</a> <span class="muted">(2026-07-31)</span></li><li><a href="https://www.tikr.com/blog/exxonmobil-stock-just-got-a-fresh-185-target-the-analyst-still-wont-say-buy">ExxonMobil Stock Just Got a Fresh $185 Target. The Analyst Still Won&#39;t Say Buy (TIKR)</a> <span class="muted">(2026-09-05)</span></li><li><a href="https://gulfnews.com/world/mena/us-iran-standoff-all-uae-residents-need-to-know-today-oct-12-2026-1.500707059">US-Iran standoff: what UAE residents need to know today (Gulf News)</a> <span class="muted">(2026-10-12)</span></li></ul>
+      
+    </div>
+    
+  </div>
+  
+  <div class="small muted" style="margin-top:8px">Also considered:
+    CEG (6.9), FCX (6.9), GS (6.7), CRWD (6.7), RTX (6.6), HUM (6.5), SBAC (4.9)
+  </div>
+  
+  
+  
+  <h2>Mid caps ($2–10B)</h2>
+  
+  <div class="grid picks">
+    
+    <div class="card">
+      <div class="pick-head">
+        <div><span class="ticker">INSW</span> <span class="chip">1 year</span></div>
+        <div class="score">7.8<span class="small muted">/10</span></div>
+      </div>
+      <div class="small muted">International Seaways, Inc. · Energy · $119.82 · $5.9B</div>
+      <div class="small" style="margin-top:8px">1 year 7.8</div>
+      <div class="bar"><span style="width: 77.5%"></span></div>
+      <div class="small">5–10 years 5.6</div>
+      <div class="bar"><span style="width: 56.0%"></span></div>
+      <div>This is the cleanest mid-cap play on the Hormuz shipping dislocation. Rerouting and longer voyages have pushed tanker earnings to records, and INSW pays out about 85% of adjusted net income. The stock trades at 7.7x trailing earnings with low leverage. Q3 results (about Nov. 5) should show peak-cycle earnings.</div>
+      <div class="label">External driver</div><div>With Hormuz closed, Atlantic-to-Asia crude flows lengthen voyages. Clarksons put average VLCC spot earnings near $642k/day in early October and Poten quoted some fixtures at $1.3M/day. The Baltic suezmax index is about 2.7x its year-ago level, and the product-tanker trade benefits from refinery dislocation.</div>
+      <div class="label">Internal driver</div><div>In the data: revenue +140%, operating margin 64%, ROE 37%, D/E 0.29, current ratio 5.9. Quarterly revenue went from $196M (Q3 2025) to $467M (Q2 2026). Q2 brought the largest dividend in company history, and LTM dividends total $12.61/share. The company also sold seven older vessels for $216M to renew the fleet.</div>
+      <div class="label">Key risk</div><div class="risk">Tanker rates collapse if Hormuz reopens or the conflict de-escalates. The stock is up 217% in 12 months and sits at the $119.83 mean target, so much of the boom may already be priced in. Forward P/E (12.5) is above trailing (7.7), implying expected earnings normalization.</div>
+      
+      <div class="label">Key numbers</div>
+      <div class="small">P/E (ttm): <strong>7.7</strong> · Fwd P/E: <strong>12.5</strong> · Rev growth: <strong>+140.1%</strong> · Op margin: <strong>64%</strong> · Debt/Equity: <strong>0.29</strong> · Div yield: <strong>6.8%</strong> · 12m return: <strong>+216.7%</strong></div>
+      
+      
+      <div class="label">Sources</div>
+      <ul class="small sources"><li><a href="https://gulfnews.com/business/energy/tanker-costs-soar-43-fold-as-hormuz-tensions-reshape-global-oil-trade-1.500698296">Tanker Costs Skyrocket 43-Fold Amid Hormuz Tensions (Gulf News)</a> <span class="muted">(2026-10-05)</span></li><li><a href="https://news.usni.org/2026/09/18/hormuz-transits-hit-three-week-high-vlcc-rates-explode">Hormuz Transits Hit Three-week High, VLCC Rates Explode - USNI News</a> <span class="muted">(2026-09-18)</span></li><li><a href="https://s203.q4cdn.com/968379449/files/doc_financials/2026/q2/INSW-Q2-Earnings-Presentation-FINAL.pdf">INSW Q2 2026 Earnings Presentation</a> <span class="muted">(2026-08-06)</span></li></ul>
+      
+    </div>
+    
+    <div class="card">
+      <div class="pick-head">
+        <div><span class="ticker">ERO</span> <span class="chip">1 year</span></div>
+        <div class="score">7.8<span class="small muted">/10</span></div>
+      </div>
+      <div class="small muted">Ero Copper Corp. · Basic Materials · $37.61 · $3.9B</div>
+      <div class="small" style="margin-top:8px">1 year 7.8</div>
+      <div class="bar"><span style="width: 77.5%"></span></div>
+      <div class="small">5–10 years 6.5</div>
+      <div class="bar"><span style="width: 65.0%"></span></div>
+      <div>Ero is a growing Brazilian copper producer. With the Tucumã mine ramping, revenue rose 74%, and the stock trades at only 7.6x forward earnings vs FCX at 17.1x, with copper near a record $6.76/lb. Production guidance is back-half weighted, so Q3 (Nov. 2) and Q4 should show volume and cash-flow inflection while leverage keeps falling.</div>
+      <div class="label">External driver</div><div>Copper is near record highs on structural deficits from electrification, grid and AI data center demand. Ero has no China tariff exposure on its production (it sells concentrate globally). Brazil-only operations add BRL and political risk, and BRL strength has nudged C1 costs, though the company has offsetting hedge gains of about $40-45M.</div>
+      <div class="label">Internal driver</div><div>Q2 2026 (Aug. 5): 17,315 t copper at a C1 cost of $2.42/lb, operating cash flow $137.9M (+49% q/q), adjusted EBITDA $144M, leverage down to 0.8x. Full-year guidance of 67.5-77.5kt copper was maintained, and improved smelting and refining terms save $20M+. In the data: revenue +73.9%, operating margin 38%, ROE 31%. The stock is above both moving averages and up 53% in 3 months.</div>
+      <div class="label">Key risk</div><div class="risk">The back-half weighted guidance is at risk if the Tucumã ramp disappoints (it has missed before). Other risks are single-country Brazil exposure (FX, permitting, power), a copper pullback if a stagflation slowdown hits demand, and the stock&#39;s large recent run (52.6% in 3 months) toward the $40.7 mean target.</div>
+      
+      <div class="label">Key numbers</div>
+      <div class="small">Fwd P/E: <strong>7.6</strong> · EV/EBITDA: <strong>8.5</strong> · Rev growth: <strong>+73.9%</strong> · Op margin: <strong>38%</strong> · Debt/Equity: <strong>0.47</strong> · 12m return: <strong>+60.6%</strong></div>
+      
+      
+      <div class="label">Sources</div>
+      <ul class="small sources"><li><a href="https://www.nasdaq.com/press-release/ero-copper-reports-second-quarter-2026-operating-and-financial-results-2026-08-05">Ero Copper Reports Second Quarter 2026 Operating and Financial Results (Nasdaq)</a> <span class="muted">(2026-08-05)</span></li><li><a href="https://www.investing.com/news/company-news/ero-copper-q2-2026-slides-leverage-drops-to-08x-as-cash-flow-surges-93CH-4843815">Ero Copper Q2 2026 slides: leverage drops to 0.8x as cash flow surges (Investing.com)</a> <span class="muted">(2026-08-06)</span></li><li><a href="https://www.barchart.com/story/news/3648063/is-ero-copper-s-back-loaded-production-guidance-just-buying-time">Is Ero Copper&#39;s Back-Loaded Production Guidance Just Buying Time? (Barchart)</a> <span class="muted">(2026-08-20)</span></li></ul>
+      
+    </div>
+    
+    <div class="card">
+      <div class="pick-head">
+        <div><span class="ticker">POWL</span> <span class="chip">5-10 years</span></div>
+        <div class="score">7.6<span class="small muted">/10</span></div>
+      </div>
+      <div class="small muted">Powell Industries, Inc. · Industrials · $191.93 · $7.0B</div>
+      <div class="small" style="margin-top:8px">1 year 6.5</div>
+      <div class="bar"><span style="width: 65.5%"></span></div>
+      <div class="small">5–10 years 7.6</div>
+      <div class="bar"><span style="width: 76.0%"></span></div>
+      <div>Powell is a debt-free maker of custom switchgear and power-distribution equipment. Its backlog jumped 69% to a record $2.4B on data center, utility and LNG orders, including a $400M+ behind-the-meter data center award. After a 40% drawdown it trades at 27.5x forward earnings, roughly in line with VRT (26.4x) and well below GEV (39.8x), while earning a 28% ROE.</div>
+      <div class="label">External driver</div><div>Power equipment is the binding constraint on AI data centers. Hyperscaler capex is about $600-700B in 2026 and utilities plan about $1.3-1.4T of capex through 2030. High oil and gas prices also support Gulf Coast LNG and petrochemical projects, Powell&#39;s legacy end market. The business is mostly domestic and has little China exposure.</div>
+      <div class="label">Internal driver</div><div>Q3 FY26 (Aug. 3): orders of $934M vs $362M a year earlier, backlog $2.4B (+69% y/y, +35% q/q), and a single data center order over $400M. Revenue of $311.7M (+9%) and EPS of $1.42 missed consensus, which sent the stock down sharply. In the data: operating margin 20.6%, ROE 28%, $634M cash, essentially zero debt, and a mean target of $280. Q4 results are due Nov. 17.</div>
+      <div class="label">Key risk</div><div class="risk">Revenue conversion lags orders, and gross margin may compress as the mix shifts to large data center projects. The stock is high-beta to sector-wide AI-capex sentiment (drops of 6% on Aug. 18, 6.4% on Sept. 14 and 6.6% on Oct. 7 on sector selling). An oil-and-gas capex slowdown would hit about 24% of backlog.</div>
+      
+      <div class="label">Key numbers</div>
+      <div class="small">Fwd P/E: <strong>27.5</strong> · EV/EBITDA: <strong>26.9</strong> · Rev growth: <strong>+8.9%</strong> · Op margin: <strong>21%</strong> · Debt/Equity: <strong>0.003</strong> · ROE: <strong>28%</strong> · 12m return: <strong>+82.9%</strong></div>
+      
+      
+      <div class="label">Sources</div>
+      <ul class="small sources"><li><a href="https://www.globenewswire.com/news-release/2026/08/03/3337870/0/en/Powell-Industries-Announces-Third-Quarter-Fiscal-2026-Results.html">Powell Industries Announces Third Quarter Fiscal 2026 Results (GlobeNewswire)</a> <span class="muted">(2026-08-03)</span></li><li><a href="https://www.marketbeat.com/instant-alerts/price-powell-industries-nasdaq-powl-stock-falls-66-whats-next-2026-10-07/">Powell Industries (NASDAQ:POWL) Stock Falls 6.6% - What&#39;s Next? (MarketBeat)</a> <span class="muted">(2026-10-07)</span></li><li><a href="https://www.fool.com/earnings/call-transcripts/2026/08/10/powell-industries-powl-q3-2026-earnings-call-transcript/">Powell Industries (POWL) Q3 2026 Earnings Call Transcript (Motley Fool)</a> <span class="muted">(2026-08-10)</span></li></ul>
+      
+    </div>
+    
+  </div>
+  
+  <div class="small muted" style="margin-top:8px">Also considered:
+    QLYS (6.7), DCO (6.7), MTDR (6.5), LEU (6.0), MP (5.8), KTOS (5.6), AVAV (5.1)
+  </div>
+  
+  
+  
+  <h2>Small caps ($300M–2B)</h2>
+  
+  <div class="grid picks">
+    
+    <div class="card">
+      <div class="pick-head">
+        <div><span class="ticker">TEN</span> <span class="chip">1 year</span></div>
+        <div class="score">7.9<span class="small muted">/10</span></div>
+      </div>
+      <div class="small muted">Tsakos Energy Navigation Limited · Energy · $51.40 · $1.5B</div>
+      <div class="small" style="margin-top:8px">1 year 7.9</div>
+      <div class="bar"><span style="width: 79.0%"></span></div>
+      <div class="small">5–10 years 5.3</div>
+      <div class="bar"><span style="width: 53.0%"></span></div>
+      <div>Diversified crude, product, LNG and shuttle tanker owner earning record rates from the Hormuz disruption. At about 5.2x trailing earnings and 6.1x EV/EBITDA it is cheaper than DHT (7.3x) and INSW (7.6x), and it has $3.5B of secured future revenue cushioning the cycle. Best fit is the 1-year horizon.</div>
+      <div class="label">External driver</div><div>The Hormuz closure has lengthened tanker routes and pushed up spot rates; peer TORM reported Q2 TCE of $59,301/day. TEN avoids the strait itself while benefiting from rate dislocation. OPEC+ is holding output flat and Europe needs non-Gulf supply.</div>
+      <div class="label">Internal driver</div><div>Q2 2026 voyage revenue rose 54% to $298.4M and net income was $139.3M ($4.40/sh, including a $38M vessel-sale gain). First-half profit-sharing revenue was $71M versus $10M a year earlier, and management expects a significant increase in H2. Fleet renewal continues with 19 newbuilds through 2028. Q3 results are due Nov 19.</div>
+      <div class="label">Key risk</div><div class="risk">A Hormuz reopening or a demand slowdown would normalize rates quickly. Debt/equity is about 1.0 with $2.1B of debt and a heavy newbuild capex program, and Greek family control limits minority influence.</div>
+      
+      <div class="label">Key numbers</div>
+      <div class="small">Fwd P/E: <strong>5.3</strong> · Trailing P/E: <strong>5.2</strong> · EV/EBITDA: <strong>6.1x</strong> · Rev growth: <strong>+54.4%</strong> · Op margin: <strong>41.8%</strong> · Debt/Equity: <strong>1.02</strong> · 12m return: <strong>+148.1%</strong> · From 52w high: <strong>-2.7%</strong></div>
+      
+      
+      <div class="label">Sources</div>
+      <ul class="small sources"><li><a href="https://www.bairdmaritime.com/shipping/tankers/tsakos-energy-navigation-posts-higher-h1-profit-on-strong-tanker-market">Tsakos Energy Navigation posts higher H1 profit on strong tanker market</a> <span class="muted">(2026-08-20)</span></li><li><a href="https://www.webull.com/news/15556921333821440">Tsakos Energy Navigation (TEN) Q2 2026 Earnings Call Transcript</a> <span class="muted">(2026-08-20)</span></li><li><a href="https://pulse2.com/torm-net-profit-jumps-473-to-record-338-million-as-hormuz-disruption-pushes-tce-rates-to-59301-per-day/amp/">TORM: Net Profit Jumps 473% As Hormuz Disruption Pushes TCE Rates To $59,301 Per Day</a> <span class="muted">(2026-08-13)</span></li></ul>
+      
+    </div>
+    
+    <div class="card">
+      <div class="pick-head">
+        <div><span class="ticker">REPX</span> <span class="chip">1 year</span></div>
+        <div class="score">7.8<span class="small muted">/10</span></div>
+      </div>
+      <div class="small muted">Riley Exploration Permian, Inc. · Energy · $45.37 · $984.3M</div>
+      <div class="small" style="margin-top:8px">1 year 7.8</div>
+      <div class="bar"><span style="width: 77.5%"></span></div>
+      <div class="small">5–10 years 5.1</div>
+      <div class="bar"><span style="width: 51.0%"></span></div>
+      <div>Low-cost Permian oil producer trading at about 5.6x forward earnings and 4.2x EV/EBITDA, with WTI above $90 while Hormuz stays closed. Production is growing about 30% y/y after the Silverback acquisition, and the stock pays a 3.5% dividend. It is a high-beta way to own the oil-shock trade over the next year, but less compelling as a decade-long compounder.</div>
+      <div class="label">External driver</div><div>WTI at $92.83 and Brent above $100 because the Strait of Hormuz is closed and OPEC+ is holding output flat. As a 100% US (Texas/New Mexico) producer it has no China or tariff exposure on its revenue.</div>
+      <div class="label">Internal driver</div><div>Q2 2026 revenue was $165.9M (+94% y/y) with a 52.6% operating margin. Management raised full-year oil production guidance to about 30% growth and expects Q3 oil output up more than 20% sequentially. Debt/Adj. EBITDAX is 1.0x. Q3 results are due Nov 4.</div>
+      <div class="label">Key risk</div><div class="risk">A US-Iran deal that reopens Hormuz would cut crude prices sharply. Small single-basin scale, a 0.45 current ratio and hedging losses (Q1 2026 net loss) make earnings volatile. The stock already trades at the $46 mean analyst target.</div>
+      
+      <div class="label">Key numbers</div>
+      <div class="small">Fwd P/E: <strong>5.6</strong> · Trailing P/E: <strong>8.1</strong> · EV/EBITDA: <strong>4.2x</strong> · Rev growth: <strong>+94.2%</strong> · Op margin: <strong>52.6%</strong> · Debt/Equity: <strong>0.42</strong> · 12m return: <strong>+70.9%</strong> · From 52w high: <strong>+0.0%</strong></div>
+      
+      
+      <div class="label">Sources</div>
+      <ul class="small sources"><li><a href="https://www.sec.gov/Archives/edgar/data/0001001614/000100161426000049/q22026earningsrelease.htm">Riley Permian Reports Second Quarter 2026 Results (8-K)</a> <span class="muted">(2026-08-05)</span></li><li><a href="https://www.barchart.com/story/news/3678053/riley-exploration-permian-nyserepx-delivers-strong-q2-cy2026-numbers-stock-soars">Riley Exploration Permian delivers strong Q2 CY2026 numbers, stock soars</a> <span class="muted">(2026-08-05)</span></li><li><a href="https://gulfnews.com/world/mena/us-iran-standoff-all-uae-residents-need-to-know-today-oct-12-2026-1.500707059">US-Iran standoff: Hormuz stays closed</a> <span class="muted">(2026-10-12)</span></li></ul>
+      
+    </div>
+    
+    <div class="card">
+      <div class="pick-head">
+        <div><span class="ticker">NPK</span> <span class="chip">1 year</span></div>
+        <div class="score">6.7<span class="small muted">/10</span></div>
+      </div>
+      <div class="small muted">National Presto Industries, Inc. · Industrials · $151.59 · $1.1B</div>
+      <div class="small" style="margin-top:8px">1 year 6.7</div>
+      <div class="bar"><span style="width: 67.0%"></span></div>
+      <div class="small">5–10 years 6.3</div>
+      <div class="bar"><span style="width: 63.0%"></span></div>
+      <div>Debt-free munitions maker (40mm, fuzes, Small Diameter Bomb warheads) with a $1.8B defense backlog and new awards. That offsets a shrinking housewares business. The stock trades near its 52-week high, with steady trend support.</div>
+      <div class="label">External driver</div><div>Western rearmament, US stockpile replenishment and NATO spending near 4% of GDP all support multi-year demand for medium-caliber ammunition. Domestic production means it has little tariff exposure on defense, though housewares imports are tariff-exposed.</div>
+      <div class="label">Internal driver</div><div>First-half 2026 defense sales rose 25% to $226.5M, and the defense backlog reached $1.8B (July 5, 2026). Aug 14, 2026: it received $159.1M of Army 40mm option and Boeing SDB warhead awards. A roughly $90M medium-caliber facility is under construction in South Dakota. First-half housewares sales fell 11%. Q3 results are due Oct 23.</div>
+      <div class="label">Key risk</div><div class="risk">Fixed-price defense contracts expose it to cost overruns. Government funding delays (CR or shutdown risk) are a further risk, as are a weak consumer housewares segment and thin analyst coverage (one analyst, Hold).</div>
+      
+      <div class="label">Key numbers</div>
+      <div class="small">Fwd P/E: <strong>174.2</strong> · Trailing P/E: <strong>25.3</strong> · EV/EBITDA: <strong>19.0x</strong> · Rev growth: <strong>+21.7%</strong> · Op margin: <strong>11.7%</strong> · Debt/Equity: <strong>0.02</strong> · 12m return: <strong>+32.7%</strong> · From 52w high: <strong>-3.3%</strong></div>
+      
+      
+      <div class="label">Sources</div>
+      <ul class="small sources"><li><a href="https://www.gopresto.com/uploads/content_files/files/financial/20260814a.pdf">National Presto Industries announces defense awards (company release)</a> <span class="muted">(2026-08-14)</span></li><li><a href="https://www.panabee.com/news/national-presto-earnings-q3-2026-report">National Presto Q2: Defense Growth Partially Offset by Housewares Volume Decline</a> <span class="muted">(2026-08-07)</span></li><li><a href="https://novayagazeta.eu/en/articles/2026/07/07/nato-announces-new-arms-deals-as-europe-seeks-to-show-trump-and-putin-its-investing-in-defence-en-news">NATO announces new arms deals as Europe invests in defence</a> <span class="muted">(2026-07-07)</span></li></ul>
+      
+    </div>
+    
+  </div>
+  
+  <div class="small muted" style="margin-top:8px">Also considered:
+    PLPC (6.5), GHM (6.4), AMSC (6.2), ANIP (5.8), IE (5.3), NNE (4.8), RPD (4.6)
+  </div>
+  
+  
+
+  
+  <h2>Market risks to watch</h2>
+  <div class="card"><ul><li>Hot September CPI (Oct. 14) pushing the Fed to hike on Oct. 28 or signal multiple more hikes. The 10-year breaking above 5.37% could trigger an equity multiple de-rating, especially in long-duration tech.</li><li>Oil shock escalation: a breakdown in US-Iran talks after the Nov. 3 midterms (strikes were only ruled out until then) could send Brent well above $110. A sudden Hormuz reopening could cut oil sharply and hit energy stocks.</li><li>Labor market cracking: payrolls near zero and the Sahm rule rising. A stagflation scenario in which the Fed hikes into a slowdown.</li><li>Credit contagion: HY spreads widened 50bp in September, CCC spreads exceed 1,000bp, and private credit and BDC redemption stress could spill into banks and leveraged small caps.</li><li>Narrow market and a complacent VIX (15.49): the S&amp;P is near records with only about 36% of stocks above their 50-day averages, and AI and semiconductor sentiment is fragile (July chip bear market, SOXX rejection at $600).</li><li>US-China: the truce expires Jan. 10, 2027, rare-earth compliance is incomplete, and the Affiliates Rule suspension ends Nov. 9, 2026, so chip export controls could tighten again.</li><li>Fiscal and political: midterm outcome, rising term premium, debt ceiling in 2027, and heavy Treasury issuance.</li><li>FX: USD/JPY at 158.63 sits in a past Japanese intervention zone. A BoJ hike or intervention could unwind yen carry trades and spill into global risk assets.</li></ul></div>
+  
+
+  <h2>How picks are scored</h2>
+  <div class="card table-wrap small">
+    <table>
+      <tr><th>Factor</th><th>1 year</th><th>5–10 years</th></tr>
+      
+      <tr><td>External: macro and geopolitics</td><td>30%</td><td>20%</td></tr>
+      
+      <tr><td>Internal: financials and valuation</td><td>30%</td><td>50%</td></tr>
+      
+      <tr><td>Internal: company news and catalysts</td><td>25%</td><td>20%</td></tr>
+      
+      <tr><td>Technicals</td><td>15%</td><td>10%</td></tr>
+      
+    </table>
+    <div class="muted" style="margin-top:8px">Each stock is scored 0–10 on each factor. Its horizon is whichever weighted score is higher.</div>
+  </div>
+
+  
+  <h2>Macro sources</h2>
+  <div class="card"><ul class="small sources"><li><a href="https://www.washingtonpost.com/business/2026/10/09/wall-street-stocks-dow-nasdaq/63e004dc-c41e-11f1-8170-681419af1cc9_story.html">How major US stock indexes fared Friday 10/9/2026 (AP via Washington Post)</a> <span class="muted">(2026-10-09)</span></li><li><a href="https://finance.yahoo.com/markets/stocks/articles/markets-news-oct-9-2026-105547352.html">Markets News, Oct. 9, 2026: Stocks Rise as Oil Prices, Treasury Yields Stabilize</a> <span class="muted">(2026-10-09)</span></li><li><a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-09-2026">Stock Market Today (Oct. 9, 2026) - TheStreet</a> <span class="muted">(2026-10-09)</span></li><li><a href="https://sixsigmaresearch.com/p/preview-of-the-week-ahead-wc-october-daa">Preview of the Week Ahead: W/C October 12, 2026 - Six Sigma Research</a> <span class="muted">(2026-10-11)</span></li><li><a href="https://sundayguardianlive.com/business/nasdaq-futures-prediction-will-nasdaq-futures-open-higher-or-lower-on-monday-october-12-check-us-stock-market-outlook-treasury-yields-inflation-data-bank-earnings-what-investors-should-know-302954/amp/">Nasdaq Futures Prediction: Monday, October 12 - Sunday Guardian</a> <span class="muted">(2026-10-11)</span></li><li><a href="https://admiralmarkets.com/analytics/traders-blog/fed-rate-decision-october-2026">Fed Rate Decision October 2026: Hike or Hold on 28 Oct? - Admiral Markets</a> <span class="muted">(2026-10-09)</span></li><li><a href="https://startupfortune.com/fed-rate-hike-odds-for-october-collapse-after-williams-cools-talk/">Fed rate hike odds for October collapse after Williams cools talk</a> <span class="muted">(2026-10-06)</span></li><li><a href="https://www.mufgresearch.com/articles/september-2026-fomc-recap">September 2026 FOMC Recap - MUFG Research</a> <span class="muted">(2026-09-16)</span></li><li><a href="https://www.lordabbett.com/content/dam/lordabbett-captivate/documents/insights/MarketsandEconomies/2026/091726-september-fed-meeting-from-signals-to-action.pdf">September Fed Meeting: From Signals to Action - Lord Abbett</a> <span class="muted">(2026-09-17)</span></li><li><a href="https://www.foxbusiness.com/economy/us-jobs-report-september-2026">US economy added 29,000 jobs in September - Fox Business</a> <span class="muted">(2026-10-02)</span></li><li><a href="https://www.advisorperspectives.com/dshort/updates/2026/10/05/jobs-report-employment-september-2026">Employment Report: 29K Jobs Added in September - Advisor Perspectives</a> <span class="muted">(2026-10-05)</span></li><li><a href="https://gulfnews.com/world/mena/us-iran-standoff-all-uae-residents-need-to-know-today-oct-12-2026-1.500707059">US-Iran standoff: What UAE residents need to know today (Oct. 12, 2026) - Gulf News</a> <span class="muted">(2026-10-12)</span></li><li><a href="https://www.cnbc.com/amp/2026/09/28/oil-price-today-wti-brent-trump-iran.html">Oil price today: WTI, Brent, Trump, Iran - CNBC</a> <span class="muted">(2026-09-28)</span></li><li><a href="https://gulfnews.com/amp/story/business%2Fenergy%2Fopec-keeps-october-oil-output-quota-unchanged-from-september-levels-1.500665366">OPEC+ keeps October oil output quota unchanged from September levels - Gulf News</a> <span class="muted">(2026-09-07)</span></li><li><a href="https://www.cnbc.com/2026/09/24/us-china-trade-truce-bessent-trump-xi.html">U.S.-China trade truce extended for two months, Bessent says - CNBC</a> <span class="muted">(2026-09-24)</span></li><li><a href="https://www.cnbc.com/2026/09/23/trump-xi-summit-us-china-trade-rare-earth-soybean-plane.html">Soybeans, planes and rare earths: fragile U.S.-China trade truce - CNBC</a> <span class="muted">(2026-09-23)</span></li><li><a href="https://www.csis.org/analysis/takeaways-trump-xi-white-house-summit">Takeaways from the Trump-Xi White House Summit - CSIS</a> <span class="muted">(2026-09-25)</span></li><li><a href="https://www.aljazeera.com/economy/2026/6/1/us-says-ban-on-ai-chip-shipments-applies-to-chinese-firms-outside-china">US says ban on AI chip shipments applies to Chinese firms outside China - Al Jazeera</a> <span class="muted">(2026-06-01)</span></li><li><a href="https://www.ocbc.com/iwov-resources/sg/ocbc/gbc/pdf/Credit Research/Monthly Reports/2026/OCBC Asia Credit Monthly Credit View - Public (October 2026).pdf">OCBC Asia Credit Monthly Credit View (October 2026)</a> <span class="muted">(2026-10-06)</span></li><li><a href="https://www.bny.com/investments/master-copy/en/news-and-insights/articles/can-high-yield-compete-with-private-credit.html">Can high yield compete with private credit? - BNY / Insight Investment</a> <span class="muted">(2026-07-31)</span></li><li><a href="https://www.troweprice.com/en/us/insights/us-midterm-elections-what-investors-need-to-know">U.S. midterm elections: What investors need to know - T. Rowe Price</a> <span class="muted">(2026-09-01)</span></li><li><a href="https://meketa.com/wp-content/uploads/2026/09/MEKETA_Macroeconomic-Newsletter_What-Were-Watching-Midterm-Election.pdf">What We Are Watching: Midterm Elections - Meketa</a> <span class="muted">(2026-09-15)</span></li><li><a href="https://www.cnbc.com/2026/08/25/trump-debt-ceiling-markets-midterm-election.html">Here&#39;s why markets are starting to care about the 2026 election - CNBC</a> <span class="muted">(2026-08-25)</span></li><li><a href="https://novayagazeta.eu/en/articles/2026/07/07/nato-announces-new-arms-deals-as-europe-seeks-to-show-trump-and-putin-its-investing-in-defence-en-news">NATO announces new arms deals as Europe seeks to show Trump and Putin it&#39;s investing in defence</a> <span class="muted">(2026-07-07)</span></li><li><a href="https://www.spglobal.com/market-intelligence/en/news-insights/research/2026/04/surging-energy-demand-puts-us-utility-capex-forecast-near-1-3t-in-2026-30">Surging energy demand puts US utility capex forecast near $1.3T in 2026-30 - S&amp;P Global</a> <span class="muted">(2026-04-15)</span></li><li><a href="https://tech-insider.org/us-utility-1-4-trillion-ai-data-center-energy-2026/">US Utilities Plan $1.4T for AI Data Centers - Tech Insider</a> <span class="muted">(2026-09-03)</span></li><li><a href="https://www.investegate.co.uk/announcement/rns/joint-stock-company-national-atomic-company-kazatomprom--kap/kazatomprom-2q26-operations-and-trading-update/9699953">Kazatomprom 2Q26 Operations and Trading Update</a> <span class="muted">(2026-08-01)</span></li><li><a href="https://www.kucoin.com/news/flash/copper-futures-hit-record-6-95-a-pound-in-2026-outpacing-gold">Copper Futures Hit Record $6.95 a Pound in 2026 - KuCoin News</a> <span class="muted">(2026-09-22)</span></li><li><a href="https://biotechbriefings.gibsondunn.com/?p=7097">MFN Goes Mid-Market: Nine More Drugmakers Sign Medicaid Pricing Deals - Gibson Dunn</a> <span class="muted">(2026-09-01)</span></li><li><a href="https://www.marketscreener.com/news/banks-press-for-more-capital-relief-make-plans-to-use-excess-capital-ce7e50dfdd8cf521">Banks press for more capital relief, make plans to use excess capital - Reuters via MarketScreener</a> <span class="muted">(2026-04-14)</span></li><li><a href="https://www.thestar.com.my/tech/tech-news/2026/07/17/chipmakers-and-other-high-flying-stocks-slide-as-ai-trade-wobbles">Chipmakers and other high-flying stocks slide as AI trade wobbles - Reuters via The Star</a> <span class="muted">(2026-07-17)</span></li><li><a href="https://www.fxstreet.com/analysis/will-japanese-authorities-intervene-to-stop-the-yens-bleeding-202511191035">Will Japanese authorities intervene to stop the yen&#39;s bleeding? - FXStreet</a> <span class="muted">(2025-11-19)</span></li></ul></div>
+  
+</main>
+</body>
+</html>
